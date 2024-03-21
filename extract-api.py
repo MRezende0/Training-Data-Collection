@@ -1,9 +1,10 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
-chave_api = '2DNNA7ZKLPUHQSSN'
+api_key = 'mhJGQjLs0V6pBBn0OCT3npKenZTDHDO6'
 
-url = 'https://economia.awesomeapi.com.br/USD-BRL/10?start_date=20200201&end_date=20230229'
+url = 'https://api.bcb.gov.br/dados/serie/bcdata.sgs.10844/dados'
+
 r = requests.get(url)
 data = r.json()
 
